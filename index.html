@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocGPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DocGPT</h1>
+        <div class="user-selection">
+            <select name="user" id="doctorType">
+                <option value="GP">General Practicioner</option>
+                <option value="Vet">Veterinarian</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Psychiatrist">Psychiatrist</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Pediatrician">Pediatrician</option>
+            </select>
+        </div>
+        <div class="model-selection">
+            <select name="model" id="modelType">
+                <option value="gpt-3.5-turbo">GPT-3.5 (faster)</option>
+                <option value="gpt-4">GPT-4 (higher quality)</option>
+            </select>
+        </div>
+        <div class="chat-box">
+            <div class="chat-history" id="chatHistory"></div>
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Type your message...">
+                <button id="send">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
